@@ -1,0 +1,1423 @@
+$letter-spacing: -.1vw
+
+$yellow: #3f37c9
+$pink: #e7a2a9
+$dark-orange: #bc6c25
+$orange: #dda15e
+$plum: #b698b9
+$black: #000
+$white: #fff
+$purple: #b698b9
+$old-lace: #fefae0
+$grey: #949191
+$dark-slate-grey: #2b2b2b
+$greylight: #f6f6f6 
+$light-blue: #3f37c9
+$dark-blue: #caf0f8
+$green: #606c38
+$dark-green: #283618
+$light-green: #38a3a5
+
+
+*
+    box-sizing: border-box
+body
+    font-family: 'Gilroy', sans-serif
+    margin: 0
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+    display: block
+.grid-3-library
+    display: grid
+    padding: 0
+    align-items: flex-start
+    grid-template-columns: repeat(3,1fr)
+    grid-auto-rows: auto
+    gap: 1.4vw
+.w-inline-block
+    display: inline-block
+    max-width: 100%
+.w-button
+    color: $white
+    line-height: inherit
+    cursor: pointer
+    background-color: $light-blue
+    border: 0
+    border-radius: 0
+    padding: 9px 15px
+    text-decoration: none
+    display: inline-block
+.w-layout-cell
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-direction: column
+    padding: 1vw
+
+img
+    vertical-align: middle
+    max-width: 100%
+    display: inline-block
+.beige
+    color: $old-lace
+p
+    margin: 0
+.paragraph
+    letter-spacing: 0
+    font-size: 1.1vw
+    line-height: 1.3vw
+    font-weight: normal
+    text-decoration: none
+    &.fw500
+        font-weight: 500
+.paragraph-big
+    letter-spacing: -.1vw
+    font-size: 2.2vw
+    line-height: 2.4vw
+    font-weight: 500
+    &.center
+        text-align: center
+    &.fw400
+        font-weight: 400
+.big-small-text
+    display: flex
+    flex-direction: column
+    width: 100%
+    gap: 1vw
+    align-items: flex-start
+h1, h2, h3
+    font-size: 36px
+    line-height: 42px
+    letter-spacing: $letter-spacing
+    font-weight: normal
+    text-transform: none
+h1
+    &.h-thankyou
+            color: $orange
+            text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 0
+            font-size: 48px
+            font-weight: 600
+            line-height: 56px
+            .span-black
+                color: $black
+.h1
+    &-hero
+        text-align: left
+        letter-spacing: $letter-spacing
+        text-transform: none
+        margin-top: 0
+        margin-bottom: 0
+        font-size: 3.8vw
+        font-weight: 600
+        line-height: 4vw
+    
+.h2
+    color: $black
+    text-align: left
+    letter-spacing: $letter-spacing
+    text-transform: none
+    max-width: 50vw
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 3.8vw
+    font-weight: 500
+    line-height: 4vw
+    &.white
+        color: $white
+h3
+    color: $light-blue
+    text-transform: uppercase
+    margin-top: 20px
+    margin-bottom: 10px
+    font-size: 36px
+    font-weight: 500
+    line-height: 26px
+.h3
+    color: $white
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 36px
+    font-weight: 400
+    line-height: 42px
+    &.greylight
+        color: $greylight
+
+.relative
+    position: relative
+.container
+    width: 85vw
+    height: 100%
+    margin-left: auto
+    margin-right: auto
+    padding-top: 4.2vw
+    padding-bottom: 4.2vw
+    display: flex
+    justify-content: center
+    flex-direction: column
+    gap: 5.333vw
+    &.wide
+        width: 100vw
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 0.6vw
+        padding-bottom: 0.6vw
+        &.relative
+            justify-content: flex-start
+            align-items: center
+            padding-top: 0
+            padding-bottom: 0
+            display: flex
+            overflow: hidden
+    &-tp
+        flex-direction: column
+        justify-content: center
+        max-width: 1170px
+        height: 100%
+        margin-left: auto
+        margin-right: auto
+        display: flex
+    &.hero-sec
+        height: 100%
+        justify-content: start
+        padding-top: 6.8vw
+.flex-block
+    display: flex
+    gap: 72px
+    justify-content: center
+.section
+    padding-top: 0
+    padding-bottom: 0
+    &-hero
+        background-color: $light-blue
+        &-wrapper
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 1.667vw
+            max-width: 37.5vw
+        &-header-wrapper
+            display: flex
+            flex-direction: column
+        &-button
+            display: flex
+            order: 0
+            gap: 0.833vw
+            align-items: center
+    &-100vh
+        height: 100vh
+.center-align
+    display: flex
+    align-items: flex-start
+    &.one-level
+        align-items: center
+        justify-content: space-between
+    &.contacts-wrapper
+        gap: 3.333vw
+.hero-text-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    gap: 5vw
+    padding: 1vw 2.8vw
+.all-text-wrapper
+    gap: 1.7vw
+    flex-direction: column
+    align-items: flex-start
+    max-width: 35.4vw
+    display: flex    
+    &.dark-blue
+        background-color: $dark-blue
+        border-radius: 15px
+        padding: 1vw 2.8vw    
+.all-content-wrapper
+    display: flex
+    justify-content: space-between
+    gap: 2.333vw
+    align-items: center
+.btn
+    border-radius: 15px
+    padding: 1.25vw 1.8vw
+    font-size: 20px
+    line-height: 20px
+    transition: all .3s
+    text-transform: uppercase
+    &-block
+        width: 100%
+    &.light-blue
+        background-color: $light-blue
+        border: 1px solid $light-blue
+        font-weight: normal
+        text-decoration: none
+        color: $white
+        &:hover
+            background-color: transparent
+            color: $black
+        &.tab-100
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+        &.full-width
+            display: flex
+            margin-top: 0
+            width: 100%
+            min-width: 100%
+            justify-content: center
+            align-self: stretch
+            align-items: center
+    &-tp
+        border-radius: 100px
+        justify-content: center
+        align-items: center
+        width: 300px
+        height: 56px
+        font-size: 18px
+        font-weight: 400
+        line-height: 22px
+        display: flex
+    &.orange
+        border: 2px solid $orange
+        color: $orange
+        background-color: $old-lace
+        text-transform: uppercase
+        &:hover
+            color: $black
+            background-color: $white
+    &.transparent
+        background-color: transparent
+        border: 1px solid $white
+    &.blue
+        border: 1px solid $black
+        color: $black
+        background-color: #C1C837
+        &:hover
+            background-color: $light-blue
+            color: $white
+
+.white
+    color: $white
+.yellow
+    background-color: $yellow
+.light-yellow
+    background-color: #fffbed
+.purple
+    background-color: $purple
+.light-blue
+    background-color: $light-blue
+.orange
+    color: $dark-orange
+    font-weight: 400
+.blue-text
+    color: $dark-blue
+.tags-block
+    display: flex
+    align-items: center
+    gap: 0.6vw
+.tag-block
+    gap: 0.4vw
+    background-color: $white
+    border: 1px solid $black
+    border-width: 1px
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    padding: 0.5vw 1vw
+    display: flex
+    &-text
+        color: $black
+        font-size: 1vw
+        line-height: 1vw
+        font-weight: normal
+.two-tags
+    gap: 0.6vw
+    flex-direction: row
+    align-items: center
+    display: flex
+.img-block
+    width: 45vw
+    height: 27vw
+    object-fit: cover
+    border-radius: 15px
+    &.img-contacts
+        width: 100%
+        height: 480px
+    &.first
+        width: 38.1vw
+    &.hero
+        width: 39vw
+        height: 28vw
+    &.min
+        position: absolute
+        width: 15vw
+        height: 10vw
+        border: 6px solid $white
+        right: 0
+        bottom: 10%
+.img-wrapper
+    position: relative
+.hero-img-wrapper
+    position: relative
+    width: 45vw
+.pixel-icon
+    width: 3.333vw
+    height: 3.333vw
+.checks
+    height: 1vw
+.cell-wrapper
+    gap: 1.2vw
+    flex-direction: column
+    align-items: flex-start
+    width: 100%
+    display: flex
+.library-title
+    gap: 24px
+    align-items: flex-start
+    margin-bottom: 20px
+    flex-direction: column
+    display: flex
+    color: $black
+    text-transform: none
+    font-size: 3.889vw
+    font-weight: normal
+    line-height: 3.889vw
+    max-width: 37vw
+    &.center
+        justify-content: center
+.text-upper
+    text-transform: uppercase
+.orange-text
+    color: $orange
+.yellow-text
+    color: $yellow
+.pink-text
+    color: $pink  
+.library-list
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: auto auto
+    gap: 2.8vw 2.3vw
+    &.two-in-row
+        grid-template-columns: 1fr 1fr
+.cover
+    border: 1px solid $black
+    border-radius: 1.1vw
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: auto
+    display: flex
+    position: static
+    overflow: hidden
+    cursor: pointer
+.cover-card
+    min-width: 100%
+    height: 20vw
+    transition: transform 400ms ease
+    object-fit: cover
+    &:hover
+        transform: scale(1.05)
+.wr-margin-40
+    margin-bottom: 40px       
+.wr-margin-80
+    margin-bottom: 80px
+.wr-margin-90
+    margin-bottom: 90px
+.library-slider
+    text-align: center
+    clear: both
+    -webkit-tap-highlight-color: transparent
+    background: #ddd
+    position: relative
+    background-color: rgba(221, 221, 221, 0)
+    height: auto
+.mask-slider
+    z-index: 1
+    white-space: nowrap
+    display: block
+    position: relative
+    left: 0
+    right: 0
+    overflow: visible
+    width: 24.514vw
+    margin-right: 1.389vw
+.library-slide
+    white-space: normal
+    text-align: left
+    width: 100%
+    height: 100%
+    display: inline-block
+    position: relative
+    vertical-align: middle
+.template-card
+    grid-column-gap: 1.667vw
+    grid-row-gap: 2.667vw
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+    border-radius: 15px
+    flex-flow: column
+    align-items: flex-start
+    height: auto
+    padding: 1.667vw
+    display: flex
+    cursor: pointer
+    &-img
+        object-fit: cover
+        border-radius: 50%
+        flex-flow: column
+        justify-content: center
+        align-items: center
+        width: 3.333vw
+        height: 3.333vw
+        display: flex
+        overflow: hidden
+        background-color: $light-blue
+        &.big-img
+            width: 18vw
+            height: 18vw
+            .block-img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        svg
+            width: 1.6vw
+            height: 1.6vw
+            fill: $dark-blue
+    &-text
+        gap: 1.3vw
+        flex-flow: column
+        justify-content: space-between
+        align-items: flex-start
+        display: flex
+    &:hover
+        background-color: $light-blue
+        .template-card-img
+            background-color: $white
+            svg
+                fill: $light-blue
+        .paragraph-big, .paragraph
+            color: $white
+.template-img-about
+    grid-column-gap: 1.667vw
+    grid-row-gap: 1.667vw
+    flex-flow: column
+    justify-content: space-between
+    align-items: flex-start
+    display: flex
+.paginator
+    align-items: flex-end
+.slider-button-wrapper
+    display: inline-flex
+    gap: 0.5vw
+    justify-content: center
+.left-arrow,.right-arrow
+    border: 1px solid $dark-blue
+    border-radius: 100vw
+    justify-content: center
+    align-items: center
+    width: 3.333vw
+    height: 3.333vw
+    display: flex
+    cursor: pointer
+    transition: background-color .3s
+    &:hover
+        background-color: $light-blue
+.right-arrow
+    background-color: $light-blue
+    &:hover
+        background-color: $white
+.arrow-white
+    height: 1.389vw
+    fill: $white
+.nav-wrap
+    position: relative
+    z-index: 1000
+    top: 0
+.navbar
+    padding-left: 0
+    padding-right: 0
+    bottom: auto
+    left: 0%
+    right: 0%
+    top: 0%
+    border-bottom: 1px solid $black
+    transition: height 250ms ease-out 0ms
+    background-color: $light-blue
+    &.fixed
+        position: fixed
+        z-index: 1000
+.container-m.nav
+    justify-content: center
+    align-items: center
+    width: 85vw
+    max-width: none
+    height: 3.8vw
+    padding-top: 0
+    padding-bottom: 0
+    margin-right: auto
+    margin-left: auto
+    display: flex
+.navmenu
+    float: right
+    position: relative
+.nav-brand
+    float: left
+    color: $white
+    text-decoration: none
+    font-weight: 700
+    position: relative
+    &:hover
+        color: $dark-blue
+.brand-logo
+    justify-content: flex-start
+    align-items: center
+    max-width: 25.944vw
+    display: flex
+    font-size: 26px
+    margin-right: auto
+.navlink
+    vertical-align: top
+    color: $white
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+    text-decoration: none
+    display: inline-block
+    position: relative
+    font-size: 20px
+    font-weight: 400
+    &:hover
+        color: $dark-blue
+.m-wrap
+    display: flex
+    margin-left: auto
+    a
+        background-color: #C1C837
+        border-radius: 100vw
+        padding: 0.6vw 1.111vw
+        border: 1px solid $black
+        font-size: .972vw
+        font-weight: normal
+        color: $black
+        text-decoration: none
+        &:hover
+            background-color: transparent
+            color: $white
+.burger-menu
+    display: none
+    flex-direction: column
+.burger-menu div 
+  width: 25px
+  height: 3px
+  background-color: $black
+  margin: 2px 0
+.nav-overlay 
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 999 /* Ensure the overlay is below the navbar but above other content */
+.cookie-banner 
+  position: fixed
+  bottom: 0
+  color: #fff
+  text-align: center
+  padding: 15px
+  z-index: 1000
+  left: 0
+
+
+.cookie-button 
+    border: 1px solid $light-blue
+    background-color: $light-blue
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    width: 100%
+    padding: 10px 22px
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+    transition: all .3s
+    display: flex
+    text-transform: uppercase
+    &:hover
+        background-color: $white
+        color: $black
+
+.cookies-banner
+    grid-row-gap: 0px
+    border: 2px solid $dark-green
+    background-color: $white
+    border-radius: 20px
+    flex-direction: column
+    width: 330px
+    height: auto
+    margin-bottom: 25px
+    margin-left: 25px
+    margin-right: 25px
+    padding: 25px
+    display: flex
+.text-x
+    display: flex
+    margin-bottom: 20px
+    gap: 12px
+.text-banner
+    color: $dark-slate-grey
+    font-size: 16px
+    line-height: 20px
+    text-align: left
+.footer-sec
+    background-color: $light-blue
+    .paragraph
+        font-size: 18px
+        line-height: 22px
+        color: $black
+    .footer-wrapper
+        display: grid
+.right-block
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-columns: 1fr
+    gap: 16px
+    .wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 24px
+        .contacts-wrapper
+            display: flex
+            flex-direction: column
+            gap: 12px
+            .quick-action
+                align-items: center
+                text-decoration: none
+                display: flex
+                .paragraph
+                    color: $white
+        .points-wrapper
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 12px
+            .quick-action
+                gap: 12px
+                align-items: center
+                text-decoration: none
+                display: flex
+                .orange-arrow
+                    width: 20px
+                    margin-top: -2px
+                .paragraph
+                    color: $white
+                    &:hover
+                        color: #C1C837
+.wrapper-gif
+    border: 2px solid $dark-green
+    object-fit: cover
+    border-radius: 20px
+    width: 300px
+    height: 300px
+    overflow: hidden
+.gif-subscr
+    width: 100%
+    height: 100%
+    object-fit: cover
+.sub-wrapper
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    gap: 3.333vw
+    display: flex
+    width: 31vw
+    svg
+        fill: $light-green
+        width: 7vw
+        height: 7vw
+.title-sub
+    display: flex
+    flex-direction: column
+    gap: 24px
+    align-items: center
+    .paragraph-big
+        color: $black
+        text-align: center
+
+.frame
+    position: absolute
+    border: 1px solid $orange
+    border-radius: 25px
+.x-icon
+    cursor: pointer
+.testimonial-slider
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    gap: 2.8vw 2.3vw
+    grid-auto-rows: auto 
+    .mask-slider
+        width: auto
+.review-card
+    grid-column-gap: 1.389vw
+    grid-row-gap: 1.78vw
+    border-radius: 1.389vw
+    flex-direction: column
+    align-items: flex-start
+    height: 35vw
+    padding: 1.7vw
+    display: flex
+    border: 1px solid $light-blue
+    background-color: $light-blue
+    .round-photo
+        width: 36vw
+        height: 18vw
+        border-radius: 15px
+        object-fit: cover
+    &-about
+        grid-column-gap: 1.389vw
+        grid-row-gap: .667vw
+        flex-direction: column
+        align-items: flex-start
+        width: 100%
+        display: flex
+.contacts
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    &_form_wrapper
+        background-color: $white
+        border-radius: 15px
+    &_form
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        gap: 1.33vw
+        .contacts__form-control
+            border: 1px solid $dark-blue
+            background-color: $greylight
+            border-radius: 30px
+            padding: 1vw
+            font-size: 1.3vw
+            width: 30vw
+            color: #888888
+    &_map
+        width: 100%
+        height: 30vw
+        iframe
+            width: 100%
+            height: 100%
+            border-radius: 15px
+.accordion-wrapper
+    display: flex
+    flex-direction: column
+    .accordion-header
+        width: 100%
+        text-align: left
+        transition: .4s
+        cursor: pointer
+        background-color: $dark-blue
+        padding: 1vw 1.5vw
+        border-bottom: 0.5px solid $white
+.active, .accordion-header:hover
+    background-color: $dark-blue
+.accordion-header:after 
+  content: '\002B'
+  color: $white
+  font-weight: bold
+  float: right
+  margin-left: 5px
+
+.active:after 
+  content: "\2212"
+  
+.accordion-panel 
+  padding: 0 1.5vw
+  background-color: white
+  max-height: 0
+  overflow: hidden
+  transition: max-height 0.2s ease-out, padding-top 0.2s ease-out, padding-bottom 0.2s ease-out
+
+.accordion-panel.active 
+    padding-top: 1vw
+    padding-bottom: 1vw
+.points-wrapper
+    display: flex
+    flex-direction: column
+    gap: 1.33vw
+.points-item
+    display: flex
+    background-color: $light-blue
+    padding: 1.3vw 2.8vw
+    gap: 1.3vw
+    border-radius: 15px
+    align-items: center
+.points-number
+    background-color: $white
+    padding: 1.8vw
+    border-radius: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 4vw
+    .paragraph
+        font-weight: 500
+.about-text-wrapper
+    border-radius: 15px
+    padding: 1.3vw 2.8vw
+    background-color: $light-blue
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 3vw
+    flex: 0 0 50%
+    height: 41.5vw
+.about-box
+    display: flex
+    flex-direction: column
+    gap: 1.333vw
+
+.about-list-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-rows: auto
+    gap: 1.333vw
+
+.about-item
+    background-color: $light-blue
+    padding: 1.3vw 1.3vw
+    border-radius: 15px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 1.333vw
+.about-number
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $white
+    border-radius: 15px
+    width: 3.333vw
+    height: 3.333vw
+    svg
+        width: 1.6vw
+        height: 1.6vw
+    &.about-img
+        background-color: $dark-blue
+    .paragraph
+        font-weight: 500
+
+.check-wrapper
+    display: flex
+    flex-direction: column
+    gap: .667vw
+.check-item
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: .667vw
+    svg
+        height: 1.667vw
+        flex: 0 0 auto
+.text-wrapper
+    background-color: $white
+    border-radius: 15px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 1.333vw
+    position: absolute
+    padding: 1.3vw .667vw
+    width: 30vw
+    bottom: -10%
+    left: 25%
+    svg
+        fill: $dark-blue
+.checkbox-wrapper
+    display: flex
+    align-items: center
+    gap: 10px
+input[type="checkbox" i] 
+    width: 24px
+    height: 24px
+@media screen and ( max-width: 991px )
+    .container
+        width: 90.3vw
+        padding-top: 8vw
+        padding-bottom: 8vw
+        &.wide
+            padding-top: 2vw
+            padding-bottom: 2vw
+        &-tp
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            max-width: 640px
+            padding-top: 0
+            display: flex
+        &.hero-sec
+            padding-top: 13vw
+    .checks
+        height: 1.4vw
+    .all-text-wrapper
+        gap: 2.8vw
+        max-width: 47vw
+    .all-content-wrapper
+        flex-direction: column
+        gap: 5.333vw
+    .paragraph
+        font-size: 2vw
+        line-height: 2.2vw
+    .paragraph-big
+        font-size: 3.8vw
+        line-height: 4.5vw
+    .h2
+        max-width: 60vw
+        font-size: 6vw
+        line-height: 6.5vw
+    .btn.yellow, .btn.white, .btn.pink, .btn.blue
+        padding: 2vw 4vw
+        font-size: 1.8vw
+        line-height: 2.1vw
+    .grid-3-library
+        grid-template-columns: 1fr
+        gap: 4.79vw 2vw
+    .cover
+        border-radius: 25px-991
+    .img-block, .cover-card
+        width: 38vw
+        height: 38vw
+    .img-block.hero
+        height: 40vw
+    .btn
+        &.light-blue
+            padding: 2vw 3.4vw
+            font-size: 1.8vw
+            line-height: 2.1vw
+            &.full-width
+                font-size: 2vw
+                line-height: 2.2vw
+    .tags-block
+        justify-content: center
+    .tag-block
+        padding: 0.8vw 1.2vw
+        &-text
+            font-size: 1.7vw
+            line-height: 1.7vw
+    .library-list
+        grid-template-columns: 1fr 1fr
+    .library-card-img
+        width: 3.333vw
+        height: 3.333vw
+    .library-card-name
+        font-size: 2.395vw
+        line-height: 2.234vw
+    .library-card-text
+        font-size: 1.916vw
+        line-height: 140%
+    .library-plan
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        &-card
+            padding: 2.878vw
+            gap: 2.878vw
+            border-radius: 25px
+            height: 100%
+        &-points
+            gap: 1.119vw 1vw
+            grid-template-columns: auto 1fr
+        .btn
+            height: auto
+    .price-wrapper
+        margin-bottom: 1.918vw
+    .price-tag
+        gap: 1.918vw
+    .mask-slider
+        gap: 2.878vw
+        margin-right: 2.395vw
+        width: 36vw
+    .template-card
+        height: 45vw
+        padding: 2.878vw
+        &-img
+            width: 5.6vw
+            height: 5.6vw
+            &.big-img
+                width: 25vw
+                height: 25vw
+            svg
+                width: 4vw
+                height: 4vw
+    .review-card
+        height: 59vw
+        width: 100%
+        border-radius: 25px
+        .round-photo
+            width: 85vw
+            height: 35vw
+    .review-card-about
+        grid-row-gap: 1.667vw
+    .left-arrow,.right-arrow
+        width: 6vw
+        height: 6vw
+        img
+            height: 2.333vw
+    .container-m.nav
+        justify-content: space-between
+        width: 90.3vw
+        height: 7.2vw
+    .m-wrap
+        margin-left: auto
+        padding-right: 2vw
+        a
+            padding: 1vw 2.2vw
+            font-size: 1.7vw
+    .navmenu 
+        display: none
+        flex-direction: column
+        position: fixed
+        padding-top: 8vw
+        left: 0
+        width: 100%
+        height: 100vh /* Adjust according to the height of your navbar */
+        background-color: $light-blue
+        z-index: 1001 /* Ensure the nav menu is above the overlay */
+    .navmenu.active 
+        display: block
+        overflow: visible
+        position: absolute
+        left: 0
+        right: 0
+        top: 7.2vw
+    .burger-menu 
+        display: flex
+    .nav-overlay.active 
+        display: block
+    .navlink
+        position: relative
+        display: block
+        padding: 2.4vw 5vw
+        font-size: 2.4vw
+    .brand-logo
+        max-width: 50vw
+    .footer-sec .footer-wrapper
+        display: flex
+        flex-direction: column
+        gap: 24px
+    .flex-block
+        gap: 72px
+        flex-direction: column
+        margin-top: 75px
+    .sub-wrapper
+        gap: 48px
+        width: auto
+        svg
+            width: 11vw
+            height: 11vw
+    h1.h-thankyou
+        font-size: 40px
+        line-height: 48px
+    .title-sub
+        .paragraph-big
+            font-size: 20px
+            line-height: 24px
+    .banner-sub
+        flex-direction: column
+        gap: 32px
+    .text-wrapper
+        left: 10%
+        bottom: -20%
+    .pixel-icon
+        width: 4.3vw
+        max-height: 4.3vw
+    .contacts_form
+        label
+            font-size: 18px
+    .contacts_form-control--height
+        height: 42px
+    .img-hero
+        height: 22vw
+        width: 22vw
+    .about-text-wrapper
+        height: 50.5vw
+    .about-number
+        width: 5.6vw
+        height: 5.6vw
+        svg
+            width: 4vw
+            height: 4vw
+    .h1-hero
+        font-size: 6vw
+        line-height: 6.5vw
+    .img-block.benefits-img
+        width: 100%
+    .contacts_map
+        height: 43vw
+    .testimonial-slider
+        grid-template-columns: 1fr 1fr
+    .library-title
+        max-width: 60vw
+
+@media screen and ( max-width: 479px )
+    .container
+        width: 92vw
+        padding-top: 12vw
+        padding-bottom: 12vw
+        justify-content: center
+        &.wide
+            &.relative
+                width: 100vw
+                height: 100%
+        &.relative
+            text-align: left
+        &-tp
+            width: 330px
+        &.hero-sec
+            padding-top: 22vw
+    .section-hero-wrapper
+        max-width: 100vw
+    .paragraph
+        font-size: 4.2vw
+        line-height: 5.2vw
+        max-width: none
+        text-align: left
+        &-big
+            font-size: 6.2vw
+            line-height: 7.2vw
+    .center-align
+        flex-direction: column
+        gap: 8vw
+    .all-text-wrapper
+        max-width: none
+        width: 100%
+        gap: 6vw
+    .img-block
+        width: 100%
+        height: 70vw
+        &.first
+            order: 1
+            width: 100%
+        &.img-contacts
+            height: auto
+    .h2
+        max-width: 80vw
+    .h1-hero.white.marg-down
+        margin-bottom: 0
+    .h1-hero
+        max-width: 100%
+    .btn.yellow, .btn.white, .btn.light-blue, .btn.pink, .btn.blue
+        justify-content: center
+        align-items: center
+        width: 100%
+        padding-top: 3vw
+        padding-bottom: 3vw
+        font-size: 4.8vw
+        line-height: 4.8vw
+        display: flex
+    .btn.light-blue.full-width
+        font-size: 4.2vw
+        line-height: 4.2vw
+    .tags-block
+        gap: 2.133vw
+        &.vertical
+            flex-direction: column
+            align-items: flex-start
+    .two-tags
+        grid-column-gap: 2.133vw
+        grid-row-gap: 2.133vw
+        flex-flow: wrap
+        align-items: center
+        display: flex
+    .tag-block
+        padding: 1.6vw 3.2vw
+        gap: 1.6vw
+        &.white
+            border-width: 1px
+            gap: 1.6vw
+        &-text
+            font-size: 3.7vw
+            line-height: 3.7vw
+    .checks
+        height: 3vw
+    .library-list
+        grid-template-columns: 1fr
+        gap: 8.533vw
+        &.two-in-row
+            grid-template-columns: 1fr
+    .cover
+        overflow: hidden
+        border-radius: 25px-479
+        position: static
+    .cover-card
+        height: 70vw
+    .library-card-name
+        font-size: 4.8vw
+        line-height: 120%
+    .library-card-text
+        font-size: 4.267vw
+    .library-plan
+        gap: 3.2vw
+        &-card
+            border-radius: 25px-479
+            gap: 6.4vw
+            border-width: 0
+            padding: 6.4vw
+        &-points
+            gap: 2.667vw 1.6vw
+    .price-wrapper
+        gap: 2.667vw
+    .price-tag
+        gap: 4.267vw
+    .mask-slider
+        width: 92vw
+    .library-slide
+        width: 92vw
+    .template-card
+        height: 90vw
+        padding: 6.4vw
+        gap: 6.4vw
+        &.m-height
+            height: 100vw
+        &-img
+            width: 12vw
+            height: 12vw
+            &.big-img
+                width: 75vw
+                height: 40vw
+            svg
+                height: 100%
+                
+    .review-card
+        min-height: 80vw
+        padding: 6.4vw
+        height: 100%
+        gap: 6.4vw
+        border-radius: 25px
+        width: auto
+        .round-photo
+            width: 100vw
+            height: 50vw
+    .template-img-about
+        gap: 6.4vw
+    .template-card-about
+        gap: 2.133vw
+    .left-arrow,.right-arrow
+        width: 14vw
+        height: 14vw
+        img
+            height: 8vw
+    .paginator
+        flex-direction: column
+        align-items: start
+    .brand-logo
+        max-width: 60vw
+        padding-left: 0
+    .container-m.nav
+        height: 14vw
+        width: 92vw
+    .m-wrap
+        padding-right: 5vw
+        a
+            padding: 3.733vw 3.733vw
+            font-size: 3.733vw
+    .navmenu
+        z-index: 1000
+        width: 100%
+        margin-top: 0
+        padding-top: 4.5vw
+        padding-left: 4vw
+        padding-right: 5vw
+    .navmenu.active
+        top: 14vw
+    .navlink
+        font-size: 4.267vw
+        padding: 3.2vw 0
+    .cookie-banner
+        position: fixed
+        bottom: 0
+        right: auto
+        margin-left: auto
+        margin-right: auto
+        width: 100vw
+        z-index: 2000
+    .cookies-banner
+        margin-left: auto
+        margin-right: auto
+    .text-banner
+        margin-bottom: 0
+    .text-x
+        flex-direction: row
+        gap: 8px
+    .x-icon
+        width: 28px
+        max-width: 28px        
+    .pixel-icon
+        width: 6.2vw
+        height: 6.2vw
+    .contacts_wrapper
+        grid-template-columns: 1fr
+    .contacts_form
+        label
+            font-size: 14px
+    .right-block .wrapper .points-wrapper
+        grid-template-columns: 1fr
+    .h2
+        font-size: 8vw
+        line-height: 8vw
+    .about-number
+        width: 12vw
+        height: 12vw
+        svg
+            height: 100%
+    .about-text-wrapper
+        gap: 5vw
+        height: 100%
+        padding: 2.8vw 4vw
+    .about-list-wrapper
+        grid-template-columns: 1fr
+        gap: 3.333vw
+    .about-item
+        padding: 2.2vw 3.3vw
+    .all-content-wrapper
+        gap: 9.2vw
+    .img-block.benefits-img
+        height: 70vw
+    .library-title
+        max-width: 100%
+    .hero-img-wrapper
+        width: 100%
+    .img-block.hero
+        width: 100%
+    .img-block.min
+        display: none
+    .contacts_form input
+        font-size: 4.2vw
+        line-height: 5.2vw
+    .contacts_form .contacts__form-control
+        width: 100%
+    .contacts_form .contacts__form-control
+        font-size: 3.2vw
+    .contacts_form
+        gap: 4.33vw
+    .contacts_form-control--height
+        height: 55px
+    .contacts_map
+        height: 80vw
+    .sub-wrapper
+        svg
+            width: 15vw
+            height: 15vw
+    .text-wrapper
+        position: relative
+        width: 100%
+        left: 0
+        bottom: 0
+    .img-wrapper
+        display: flex
+        flex-direction: column
+        gap: 8.333vw
+    .testimonial-slider
+        grid-template-columns: 1fr
